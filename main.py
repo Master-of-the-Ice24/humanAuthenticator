@@ -43,7 +43,7 @@ class Authentication:
     def showResponse(self):
         if int(self.analyzeImage()) == self.randomNumber:
             print("\n\n\n", "Drawed number: ", self.randomNumber)
-            print(" Drawed number matches random number")
+            print(" Drawn number matches random number")
             print(" Test successful, not a robot", "\n\n\n")
         else:
             print("\n\n\n", "test failed, retry.")
