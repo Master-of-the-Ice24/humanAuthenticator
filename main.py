@@ -9,7 +9,7 @@ import time
 
 class Authentication:
     def __init__(self):
-        genai.configure(api_key="YOUR_OWN_GEMINI_API_KEY")
+        genai.configure(api_key="AIzaSyD8gLsfMCkFWH9-JxYYVCDNq_7lFUVCfIM")
         self.model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
         self.randomNumber = random.randint(0, 100)
@@ -42,7 +42,7 @@ class Authentication:
 
     def showResponse(self):
         if int(self.analyzeImage()) == self.randomNumber:
-            print("\n\n\n", "Drawed number: ", self.randomNumber)
+            print("\n\n\n", "Drawn number: ", self.randomNumber)
             print(" Drawn number matches random number")
             print(" Test successful, not a robot", "\n\n\n")
         else:
